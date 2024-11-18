@@ -4,6 +4,8 @@ import WhoUs from "@/components/homepage/WhoUs";
 import ServicesSection from "@/components/homepage/ServicesSection";
 import ProjectSection from "@/components/homepage/ProjectsSection";
 import StatisticSection from "@/components/homepage/StatisticSection";
+import Footer from "@/components/Footer";
+import ClientsSection from "@/components/homepage/ClientsSection";
 export default function Home() {
   return (
     <div>
@@ -12,6 +14,10 @@ export default function Home() {
       <ServicesSection/>     
       <ProjectSection/>
       <StatisticSection/>
+      <ClientsSection/>
+
+      <Footer/> 
+
       
     </div>
   );

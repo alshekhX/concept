@@ -22,13 +22,14 @@ const HeroSlide = ({slides}) => {
     
     
       return (
-        <div className="slideshow-container">
+        <div className="slideshow-container bg-black">
           {slides.map((slide, index) => (
             <div
               key={index}
               className={`slide ${index === currentIndex ? 'active' : ''}`}
-              style={{ backgroundImage: `url(${slide})` }}
-            />
+            >
+              <img src={slide} className="h-full w-full" alt="" />
+              </div>
           ))}
         </div>)
 }

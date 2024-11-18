@@ -1,45 +1,71 @@
-import React from 'react'
+import React from "react";
 
- 
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
- 
-
+} from "@/components/ui/carousel";
+import DividerTitle from "./DividerTitle";
+import HomeSubtitle from "./HomeSubtitle";
+import ServicesCard from "./ServicesCard";
+import { AirVent, Construction, Building, BoxesIcon } from "lucide-react";
+import Air from "@/assets/images/services/air.jpg";
+import Box from "@/assets/images/services/box.jpg";
+import Build from "@/assets/images/services/build.jpg";
+import Roads from "@/assets/images/services/roads.jpg";
 
 const ServicesSection = () => {
-    return (
-        <div className="  bg-zainb py-36 ">
+  return (
+    <div className="  bg-zainb  py-20 md:py-32  ">
+      <div className="container px-4 mx-auto flex flex-col">
+        <DividerTitle
+          title="Our Services"
+          dividerWidth={"120px"}
+          textColor="text-black"
+          dividerColor="bg-black opacity-85"
+        />
+        <HomeSubtitle
+          title="We offer Quality craftsmanship, reliable solutions, and exceptional service."
+          style=""
+        />
 
-            <div className='container px-4 mx-auto flex flex-col'>
-
-            <div className='mb-8 text-xl text-black font-semibold '>Our Services</div>
-        <div className='mb-16 text-6xl '>We offer Quality craftsmanship, reliable solutions, and exceptional service.</div>
-        <Carousel className="  w-full  ">
-          <CarouselContent className="-ml-1">
-            {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index} className="pl-1 md:basis-1/4 lg:basis-1/5">
-                <div className="p-1">
-                  <Card>
-                    <CardContent className="flex aspect-square items-center justify-center p-6">
-                      <span className="text-2xl font-semibold">{index + 1}</span>
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+        <div className="grid grid-cols-1 sm:grid-cols-2   lg:grid-cols-3 xl:grid-cols-4">
+        
+          <ServicesCard
+            imageSrc={Build.src}
+            title=" Construction and Finishing Contracting"
+            description="Providing comprehensive engineering design services, efficient project management, and specialized technical consultations to deliver innovative and sustainable engineering solutions for all building types and projects."
+          >
+            <Building className="mr-2 pt-1  size-6" />
+          </ServicesCard>
+          <ServicesCard
+            imageSrc={Air.src}
+            title="HVAC Services"
+            description="Providing cutting-edge HVAC systems, from split units to advanced central air conditioning, combined with expert maintenance and innovative energy-saving solutions to optimize performance and reduce costs."
+          >
+            <AirVent className="mr-2 pt-1  size-6" />
+          </ServicesCard>
+          <ServicesCard
+            imageSrc={Roads.src}
+            title=" Road Works"
+            description="Providing comprehensive road design, construction, and maintenance services to ensure safe and efficient transportation infrastructure."
+          >
+            <Construction className="mr-2 pt-1  size-6" />
+          </ServicesCard>
+          <ServicesCard
+            imageSrc={Box.src}
+            title="General Supply Services"
+            description="Providing a comprehensive range of building materials, industrial equipment, and daily consumables to meet diverse construction and operational needs."
+          >
+            <BoxesIcon className="mr-2 pt-1  size-6" />
+          </ServicesCard>
         </div>
-        </div>
-      )
-}
+      </div>
+    </div>
+  );
+};
 
-export default ServicesSection
+export default ServicesSection;

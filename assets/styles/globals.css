@@ -11,6 +11,7 @@
 body {
   background: var(--wall);
   font-family: "Playfair Display", serif;;
+  overflow-x: hidden;
 }
 /* 
 .state-container {
@@ -32,6 +33,44 @@ body {
   }
 }
 
+
+/* clients section slide show */
+
+
+.logo-slider {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slider {
+  
+  mask-image: linear-gradient(
+    to right,
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 20%,
+    hsl(0 0% 0% / 1) 80%,
+    hsl(0 0% 0% / 0)
+  );
+}
+
+.logo-item {
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.logo-item.active {
+  opacity: 1;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 /* slide show */
 .slideshow-container {
   position: relative;
@@ -45,6 +84,11 @@ body {
   height: 2px;
   background-color: #ccc;
   animation: dividerAnimation 1s ease-in-out infinite alternate;
+}
+
+
+.line {
+  height: 2px;
 }
 
 .slide {
@@ -120,3 +164,113 @@ body {
   body {
     @apply bg-background text-foreground;}}
 
+
+
+    
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+}
+
+/* mobile nav */
+
+
+.mobile-nav{
+
+  display: none;
+}
+
+.ham-button{
+display: none;
+}
+
+
+
+
+@media (max-width: 766px) {
+ 
+
+  
+  
+.ham-button{
+display: block;
+position: fixed;
+z-index: 100;
+right: 30px;
+top: 20px;
+}
+
+
+.mobile-nav{
+
+display: flex;
+ align-items: end;
+
+position: fixed;
+padding-top: 100px;
+top: 0;
+right: -300px;
+overflow: hidden;
+height: 100%;
+width: 250px;
+z-index: 100;
+background-color: #28194C;
+transition: all 1s ease-in-out ;
+
+
+}
+.mobile-nav.active{
+
+right: 0px;
+
+
+}
+
+.mobile-nav li{
+padding-bottom: 20px;
+padding-right: 40px;
+justify-self: end
+
+}
+  
+}
+
+
+/* services card */
+
+.card {
+  background-color: #EAE3D5;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card:hover {
+  background-color: #96752E;
+  color: white;
+}
+
+.card-image {
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 14px;
+}

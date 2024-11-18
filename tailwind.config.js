@@ -20,6 +20,7 @@ module.exports = {
   			wall: '#FEF9EF',
   			logo: '#28194C',
 			bejj:"#96752E",
+			lightBejj:"#EAE3D5",
 			darkBlue:"#28194C",
 			zainb:"#578D8D",
   			background: 'hsl(var(--background))',
