@@ -8,7 +8,7 @@ const Footer = () => {
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-24">
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
               <div class="mb-6 md:mb-0">
-                  <a href="https://flowbite.com/" class="flex items-center">
+                  <a href="#git" class="flex items-center">
                       <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Concept</span>
                   </a>
               </div>
@@ -16,10 +16,10 @@ const Footer = () => {
                       <h2 class="mb-6 text-sm font-semibold  uppercase dark:text-white">Resources</h2>
                       <ul class="text-gray-500 dark:text-gray-400 font-medium">
                           <li class="mb-4">
-                              <a href="https://flowbite.com/" class="hover:underline">Projects</a>
+                              <a href="#" class="hover:underline">Projects</a>
                           </li>
                           <li>
-                              <a href="https://tailwindcss.com/" class="hover:underline">Creadentials</a>
+                              <a href="#" class="hover:underline">Creadentials</a>
                           </li>
                       </ul>
                   </div>
@@ -27,10 +27,10 @@ const Footer = () => {
                       <h2 class="mb-6 text-sm font-semibold  uppercase dark:text-white">Follow us</h2>
                       <ul class="text-gray-500 dark:text-gray-400 font-medium">
                           <li class="mb-4">
-                              <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Facebook</a>
+                              <a href="#" class="hover:underline ">Facebook</a>
                           </li>
                           <li>
-                              <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Instagram</a>
+                              <a href="#" class="hover:underline">Instagram</a>
                           </li>
                       </ul>
                   </div>
