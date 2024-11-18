@@ -24,7 +24,11 @@ exemplary housing and modern living with global
 standards of luxury, designed to be model and 
 sustainable. Located within the urban scope, Tabuk 
 Valley stands out with its proximity to key city 
-arteries'/>
+arteries.'>
+<h3 className=' text-xl font-normal opacity-80 w-4/5 md:w-full'>  Concrete Works, Finishes, and HVAC Works.
+</h3>
+
+  </Project>
 
 
     <div className="divider my-12 md:my-24"></div>
@@ -32,24 +36,41 @@ arteries'/>
 
     <Project title='Madinag Housing (Ard Alnaql)'
 imgSrc={Madina.src}
-des='The Tabuk Valley project embodies the concepts of 
-exemplary housing and modern living with global 
-standards of luxury, designed to be model and 
-sustainable. Located within the urban scope, Tabuk 
-Valley stands out with its proximity to key city 
-arteries'/>
+des=' We are a limited liability company based in Tabuk, 
+Saudi Arabia. Founded on over 20 years of 
+cumulative experience through our institutions, we 
+specialize in government projects and have gained 
+extensive expertise in the Saudi market.'>
+  <h3 className='text-xl font-normal opacity-80 w-5/6 '>Concrete construction and full foundation setup,
+ including HVAC installations, wooden doors,
+ and marble supplies.</h3>
+  
+
+    </Project>
+
 
 <div className="divider my-24"></div>
 
 <Project title='Establishing the Barq Al Mustaqbal
  Headquarters'
  imgSrc={Musta.src}
- des='The Tabuk Valley project embodies the concepts of 
-exemplary housing and modern living with global 
-standards of luxury, designed to be model and 
-sustainable. Located within the urban scope, Tabuk 
-Valley stands out with its proximity to key city 
-arteries'/>
+ des=' We are a limited liability company based in Tabuk, 
+ Saudi Arabia. Founded on over 20 years of 
+ cumulative experience through our institutions, we 
+ specialize in government projects and have gained 
+ extensive expertise in the Saudi market'>
+  <h3 className='text-xl mb-1 font-normal opacity-75 w-5/6 md:w-full'>Concrete and Construction:
+</h3>
+  <p className='opacity-85 mb-3'> 10 buildings, each with 5 floors
+</p>
+ <h3 className='text-xl  mb-1 font-normal opacity-75 w-5/6 md:w-full'> HVAC Works:
+</h3>
+  <p className='opacity-85'> Installation of 8,800 units
+</p>
+  <p className='opacity-85'> Installation of 8,800 units
+</p>
+
+    </Project>
 
 
 
