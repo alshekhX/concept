@@ -20,7 +20,7 @@ import Roads from "@/assets/images/services/roads.jpg";
 const ServicesSection = () => {
   return (
     <div className="  bg-zainb  py-20 md:py-32  ">
-      <div className="container px-4 mx-auto flex flex-col">
+      <div className="container px-4  mx-auto flex flex-col">
         <DividerTitle
           title="Our Services"
           dividerWidth={"120px"}
@@ -32,7 +32,7 @@ const ServicesSection = () => {
           style=""
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2   lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 sm:justify-items-start justify-items-center  lg:grid-cols-3 xl:grid-cols-4">
         
           <ServicesCard
             imageSrc={Build.src}

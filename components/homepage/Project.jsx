@@ -18,7 +18,7 @@ const Project = ({title,des, subtitle, imgSrc}) => {
     <div>
     <DivAnimate viewport={{amount:0.5}} className=" " initial={{opacity:0,  x:20}} transition={{delay:0.4, duration: .6}} whileInView={{opacity:1, x:0, }}>
 
-      <img  className=' ' src={imgSrc}/>
+      <img  className='  justify-self-center sm:justify-self-start ' src={imgSrc}/>
     
     </DivAnimate>
     </div>
