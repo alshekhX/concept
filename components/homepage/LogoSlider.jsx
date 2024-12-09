@@ -26,7 +26,7 @@ const LogoSlider = ({ logos }) => {
                   src={src}
                   fill={true}
                   alt={alt}
-                  className=" md:w-25 sm:w-20 w-16 flex-none"
+                  className="   h-16  flex-none"
                 />
               ))}
             </React.Fragment>

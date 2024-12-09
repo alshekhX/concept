@@ -18,6 +18,7 @@ module.exports = {
   				foreground: 'hsl(var(--secondary-foreground))'
   			},
   			wall: '#FEF9EF',
+			darkwall:"#F7F4EB",
   			logo: '#28194C',
 			bejj:"#96752E",
 			lightBejj:"#EAE3D5",

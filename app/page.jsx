@@ -16,7 +16,6 @@ export default function Home() {
       <StatisticSection/>
       <ClientsSection/>
 
-      <Footer/> 
 
       
     </div>
