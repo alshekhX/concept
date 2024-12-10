@@ -4,17 +4,25 @@ import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import Divider from "../Divider";
 
+import Najran from "@/assets/images/projects/najran.jpg";
+import Najran2  from "@/assets/images/projects/najran2.jpg";
+import Najran3 from "@/assets/images/projects/najran3.jpg";
+import Najran4 from "@/assets/images/projects/najran4.jpg";
+import Najran5 from "@/assets/images/projects/najran5.jpg";
+
+
 const MebProjects = () => {
   const projects = [
     {
       title: "Najran Housing Projects",
       subtitle: "Concrete Works, Finishes, and HVAC Works",
       images: [
-        "https://content.jdmagicbox.com/comp/latur/h2/9999p2382.2382.201212162953.h6h2/catalogue/balaji-group-of-construction-latur-city-latur-civil-contractors-3622jhicc8.jpg",
-        "https://content.jdmagicbox.com/comp/latur/h2/9999p2382.2382.201212162953.h6h2/catalogue/balaji-group-of-construction-latur-city-latur-civil-contractors-3622jhicc8.jpg",
-        "https://content.jdmagicbox.com/comp/latur/h2/9999p2382.2382.201212162953.h6h2/catalogue/balaji-group-of-construction-latur-city-latur-civil-contractors-3622jhicc8.jpg",
-        "https://content.jdmagicbox.com/comp/latur/h2/9999p2382.2382.201212162953.h6h2/catalogue/balaji-group-of-construction-latur-city-latur-civil-contractors-3622jhicc8.jpg",
-        "https://airfixture.com/hubfs/pexels-pixabay-269077.jpg"
+        Najran.src,
+        Najran2.src,
+        Najran3.src,
+        Najran4.src,
+        Najran5.src,
+
       ]
     },
    

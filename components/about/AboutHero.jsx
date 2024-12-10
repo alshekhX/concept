@@ -1,24 +1,12 @@
 import React from 'react'
 import { AnimateH1 } from '../animation/H1Animate'
 import { AnimateH2 } from '../animation/H2Animate'
-import HeroImage from "@/assets/images/hero.jpg"
-import HeroImage2 from "@/assets/images/hero2.jpg"
-import HeroImage3 from "@/assets/images/hero3.jpg"
+
+import BackImage from "@/assets/images/backabout.jpg";
+import Image from 'next/image'
 
 const AboutHero = () => {
 
-    
-const imagesList=[
-    HeroImage.src,
-    HeroImage2.src,
-    HeroImage3.src,
-  
-  
-  
-    
-  
-  
-  ]
   return (
     <div> <div className="grid text-wall  grid-cols-1 relative">
     <div className=" absolute inset-0 z-20 container mx-auto ">
@@ -36,7 +24,7 @@ const imagesList=[
 <div className='relative'>
 <div className=" absolute inset-0 z-10  bg-darkBlue opacity-95   "></div>
 
-<img className=' hero-container   w-full' src='https://okcredit-blog-images-prod.storage.googleapis.com/2021/02/construction1.jpg' ></img> </div>
+<Image className=' hero-container   w-full' src={BackImage} /> </div>
 </div></div>
   )
 }

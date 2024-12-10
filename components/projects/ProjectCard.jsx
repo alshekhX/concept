@@ -30,7 +30,7 @@ const ProjectCard = ({ title, subtitle, images }) => {
             <img 
               src={image} 
               alt={`Project image ${index + 1}`} 
-              className="w-full h-auto object-cover rounded-lg transition-transform duration-300 hover:scale-110"
+              className="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-110"
             />
           </motion.div>
         ))}

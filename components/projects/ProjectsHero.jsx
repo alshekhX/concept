@@ -1,6 +1,9 @@
 import React from 'react'
 import { AnimateH1 } from '../animation/H1Animate'
 import { AnimateH2 } from '../animation/H2Animate'
+import BackImage from "@/assets/images/show2.jpg";
+import Image from 'next/image';
+
 
 
 const ProjectsHero = () => {
@@ -22,7 +25,7 @@ const ProjectsHero = () => {
 <div className='relative'>
 <div className=" absolute inset-0 z-10  bg-darkBlue opacity-95   "></div>
 
-<img className=' hero-container   w-full' src='https://png.pngtree.com/background/20230527/original/pngtree-modern-shiny-abstract-network-in-the-dark-with-lines-and-wires-picture-image_2763232.jpg' ></img> </div>
+<Image className=' hero-container   w-full' src={BackImage} /> </div>
 </div></div>
   )
 }

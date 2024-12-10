@@ -38,7 +38,7 @@ const Footer = () => {
                               <a href="/services/mep" class="hover:underline">MEP</a>
                           </li>
                           <li>
-                              <a href="/services/supply-chain" class="hover:underline">Supply Chain</a>
+                              <a href="/services/supplychain" class="hover:underline">Supply Chain</a>
                           </li>
                       </ul>
                   </div>

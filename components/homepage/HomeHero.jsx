@@ -2,6 +2,8 @@ import React from 'react'
 import HeroImage from "@/assets/images/hero.jpg"
 import HeroImage2 from "@/assets/images/hero2.jpg"
 import HeroImage3 from "@/assets/images/hero3.jpg"
+import HeroImage4 from "@/assets/images/hero4.jpg"
+
 
 import HeroSlide from './HeroSlide'
 import Image from 'next/image'
@@ -15,6 +17,7 @@ const imagesList=[
   HeroImage.src,
   HeroImage2.src,
   HeroImage3.src,
+  HeroImage4.src
 
 
 

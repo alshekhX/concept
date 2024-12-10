@@ -1,6 +1,9 @@
 import React from 'react'
 import { AnimateH1 } from '../animation/H1Animate'
 import { AnimateH2 } from '../animation/H2Animate'
+import BackImage from "@/assets/images/backservices.jpg";
+import Image from 'next/image';
+
 
 const HeroServices = () => {
 
@@ -16,8 +19,8 @@ const HeroServices = () => {
 </div>
   </div>
 <div className='relative'>
-<div className=" absolute inset-0 z-10  bg-darkBlue opacity-95   "></div>
-<img className=' hero-container   w-full' src='https://www.letsbuild.com/wp-content/uploads/2023/07/resource-bim-the-importance-of-bim-in-the-lighting-industry.jpg' ></img> </div>
+<div className=" absolute inset-0 z-10 bg-darkBlue opacity-95 "></div>
+<Image className=' hero-container   w-full' src={BackImage} /></div>
  </div>
   </div>
   )

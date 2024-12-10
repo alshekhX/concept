@@ -14,7 +14,7 @@ import Ceo4 from '@/assets/images/services/ceo4.jpg'
 const SupplyChainServices = () => {
   return (
     <div className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 container mx-auto max-w-7xl">
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 sm:mb-10 text-center">
+      <h1 className="text-4xl  underline sm:text-5xl md:text-6xl font-bold mb-8 sm:mb-10 text-center">
         Supply Chain Services
       </h1>
 

@@ -50,7 +50,7 @@ const ContactForm = () => {
 
       <div className="container py-32 mx-auto px-4 max-w-4xl">
         <motion.h2 
-          className="text-5xl  font-bold text-center mb-12 text-gray-900"
+          className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-8 sm:mb-12 text-gray-800"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}

@@ -21,16 +21,21 @@ const ServiceCard = ({ title, description, imgSrc, learnMore, reversed = false }
         src={imgSrc} 
         alt={title} 
       />
+      
       <div className={`
-        flex flex-col 
+        flex flex-col  
         ${reversed ? 'md:items-start' : 'md:items-end'} 
         items-center text-center md:text-left
         justify-center space-y-6
       `}>
         <div className="w-full md:w-3/4">
-          <h2 className="text-3xl md:text-5xl text-gray-800 font-bold">{title}</h2>
+        <Link href={learnMore}>
+          
+          
+          <h2 className="text-3xl  hover:underline md:text-5xl text-gray-800 font-bold">{title}</h2>
+          </Link>
         </div>
-        <p className="text-lg md:text-2xl w-full md:w-3/4 text-gray-700 opacity-80">
+        <p className="text-xl md:text-2xl w-full md:w-3/4 text-gray-700 opacity-80">
           {description}
         </p>
         <div className="group text-darkBlue opacity-80 w-full md:w-3/4 cursor-pointer">

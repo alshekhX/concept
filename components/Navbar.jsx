@@ -99,15 +99,15 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Language Toggle for Desktop */}
+        {/* Call to Action Button */}
         <Link 
-          href="/" 
+          href="/contact" 
           className={`
-          text-xl text-black opacity-85 hover:opacity-100 transition-colors 
+          rounded-full px-4 py-2 md:flex hidden bg-darkBlue text-white hover:bg-opacity-90 transition-colors
           ${isScrolled ? 'text-base' : 'text-xl'}
           `}
         >
-          العربية
+          Get Started
         </Link>
 
         {/* Mobile Navigation Toggle */}
@@ -145,17 +145,8 @@ const Navbar = () => {
                   </li>
                 ))}
                 
-                {/* Mobile Language Toggle */}
-                <li>
-                  <Link 
-                    href="/" 
-                    onClick={toggleMobileNav}
-                    className="                        text-xl text-black opacity-85 hover:opacity-100 transition-colors 
-                    "
-                  >
-                    العربية
-                  </Link>
-                </li>
+                {/* Mobile Call to Action */}
+           
               </ul>
             </motion.div>
           )}

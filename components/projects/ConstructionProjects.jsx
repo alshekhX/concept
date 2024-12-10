@@ -4,6 +4,19 @@ import { motion } from "framer-motion";
 import { ImageModal } from "@/components/ui/image-modal";
 import ProjectCard from "./ProjectCard";
 import Divider from "../Divider";
+import Tubuk from "@/assets/images/projects/tubuk.jpg";
+
+import Tubuk2 from "@/assets/images/projects/tubuk2.jpg";
+import Tubuk3 from "@/assets/images/projects/tubuk3.jpg";
+import Tubuk4 from "@/assets/images/projects/tubuk4.jpg";
+import Tubuk5 from "@/assets/images/projects/tubuk5.jpg";
+import Musta from "@/assets/images/projects/musta.jpg";
+import Musta2 from "@/assets/images/projects/musta2.jpg";
+import Madinak from "@/assets/images/projects/madinak.jpg";
+import Madinak2 from "@/assets/images/projects/madinak2.jpg";
+
+
+
 
 
 
@@ -13,29 +26,29 @@ const ConstructionProjects = () => {
       title: "Tubuk Housing Projects",
       subtitle: "Concrete Works, Finishes, and HVAC Works",
       images: [
-        "https://content.jdmagicbox.com/comp/latur/h2/9999p2382.2382.201212162953.h6h2/catalogue/balaji-group-of-construction-latur-city-latur-civil-contractors-3622jhicc8.jpg",
-        "https://content.jdmagicbox.com/comp/latur/h2/9999p2382.2382.201212162953.h6h2/catalogue/balaji-group-of-construction-latur-city-latur-civil-contractors-3622jhicc8.jpg",
-        "https://content.jdmagicbox.com/comp/latur/h2/9999p2382.2382.201212162953.h6h2/catalogue/balaji-group-of-construction-latur-city-latur-civil-contractors-3622jhicc8.jpg",
-        "https://content.jdmagicbox.com/comp/latur/h2/9999p2382.2382.201212162953.h6h2/catalogue/balaji-group-of-construction-latur-city-latur-civil-contractors-3622jhicc8.jpg",
-        "https://airfixture.com/hubfs/pexels-pixabay-269077.jpg"
+Tubuk.src,
+Tubuk2.src,
+Tubuk3.src,
+Tubuk4.src,
+Tubuk5.src
+
+    
       ]
     },
     {
       title: "Establishing Barq Al Mustaqbal Headquarters",
       subtitle: "Concrete Construction and Full Foundation Setup, Including HVAC Installations, Wooden Doors, and Marble Supplies",
       images: [
-        "https://content.jdmagicbox.com/comp/latur/h2/9999p2382.2382.201212162953.h6h2/catalogue/balaji-group-of-construction-latur-city-latur-civil-contractors-3622jhicc8.jpg",
-        "https://content.jdmagicbox.com/comp/latur/h2/9999p2382.2382.201212162953.h6h2/catalogue/balaji-group-of-construction-latur-city-latur-civil-contractors-3622jhicc8.jpg"
+       Musta.src,
+       Musta2.src
       ]
     },
     {
       title: "Madina Housing (Ard Alnaql)",
       subtitle: "85 Buildings (1870 Units)",
       images: [
-        "https://content.jdmagicbox.com/comp/latur/h2/9999p2382.2382.201212162953.h6h2/catalogue/balaji-group-of-construction-latur-city-latur-civil-contractors-3622jhicc8.jpg",
-        "https://content.jdmagicbox.com/comp/latur/h2/9999p2382.2382.201212162953.h6h2/catalogue/balaji-group-of-construction-latur-city-latur-civil-contractors-3622jhicc8.jpg",
-        "https://content.jdmagicbox.com/comp/latur/h2/9999p2382.2382.201212162953.h6h2/catalogue/balaji-group-of-construction-latur-city-latur-civil-contractors-3622jhicc8.jpg",
-        "https://content.jdmagicbox.com/comp/latur/h2/9999p2382.2382.201212162953.h6h2/catalogue/balaji-group-of-construction-latur-city-latur-civil-contractors-3622jhicc8.jpg"
+        Madinak.src,
+        Madinak2.src
       ]
     }
   ];
@@ -44,7 +57,7 @@ const ConstructionProjects = () => {
     <div className=" min-h-screen">
       <div className="container mx-auto px-4 py-32">
         <motion.h1 
-          className="text-5xl md:text-6xl font-bold text-center  text-gray-800"
+          className="text-5xl mb-16 md:text-6xl font-bold text-center  text-gray-800"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -59,7 +72,7 @@ const ConstructionProjects = () => {
               subtitle={project.subtitle}
               images={project.images}
             />
-  {index < projects.length-1?            <Divider/>
+  {index < projects.length-1?      <Divider/>
  : <></>}            {index < projects.length - 1 && (
               <div className=" my-12"></div>
             )}

@@ -43,8 +43,8 @@ const ServicesSection = () => {
           </ServicesCard>
           <ServicesCard
             imageSrc={Air.src}
-            title="HVAC Services"
-            description="Providing cutting-edge HVAC systems, from split units to advanced central air conditioning, combined with expert maintenance and innovative energy-saving solutions to optimize performance and reduce costs."
+            title="MEP Services"
+            description="We provide top-tier MEP services including HVAC, refrigeration, electrical, plumbing, and firefighting systems for government and private clients. Our commitment to quality and innovation ensures efficient, reliable solutions that meet international and Saudi standards."
           >
             <AirVent className="mr-2 pt-1  size-6" />
           </ServicesCard>
