@@ -30,7 +30,7 @@ const StatisticSection = () => {
             <MovingCompanyState
               state="Point of Sales"
               icon={<FaMoneyBill />}
-              companyCount={500}
+              companyCount={5}
             />
             <MovingCompanyState
               state="Vehicles"
@@ -40,7 +40,7 @@ const StatisticSection = () => {
             <MovingCompanyState
               state="Employee"
               icon={<FaPersonBooth />}
-              companyCount={300}
+              companyCount={90}
             />
           </div>
 

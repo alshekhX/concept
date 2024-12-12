@@ -23,7 +23,7 @@ const WhoUs = () => {
         {/* Text Section */}
         <div className="flex flex-col justify-center">
           <p className="text-lg lg:w-4/5 md:pr-10 italic   border-l-4 border-darkBlue pl-4 sm:text-xl md:text-2xl text-justify text-black opacity-90 leading-relaxed">
-            We specialize in construction and finishing contracting, road works, air conditioning (supply, implementation, maintenance), and general supplies. With extensive experience and a solid reputation, we are a trusted partner in delivering high-quality products and services.
+            We specialize in construction and finishing contracting,  MEP services (supply, implementation, maintenance), and general supplies. With extensive experience and a solid reputation, we are a trusted partner in delivering high-quality products and services.
           </p>
         </div>
 

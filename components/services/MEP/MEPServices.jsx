@@ -110,10 +110,10 @@ const ServicesGrid = () => {
             </div>
             <div className="order-1 md:order-2 w-full aspect-video md:aspect-auto">
               <div className="relative w-full h-full">
-                <Image 
-                fill={true}
+                <img 
                 
-                  src={category.image} 
+                
+                  src={category.image.src} 
                   alt={`${category.category} services`}
                   className="w-full h-full object-cover rounded-lg"
                 />
