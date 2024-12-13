@@ -33,9 +33,9 @@ const ServicesSection = () => {
           style=""
         />
 
-        <div className="lg:flex lg:flex-row md:grid md:grid-cols-2 flex-col   justify-items-center w-w-full justify-center  ">
+        <div className="lg:flex lg:flex-row md:grid md:grid-cols-2  flex-col   justify-items-center w-w-full justify-center  ">
         
-        <Link href='/services/construction'>  <ServicesCard
+        <Link href='/services/construction' className=" ">  <ServicesCard
             imageSrc={Build.src}
             title=" Construction and Finishing Contracting"
             description="Providing comprehensive engineering design services, efficient project management, and specialized technical consultations to deliver innovative and sustainable engineering solutions for all building types and projects."
@@ -51,7 +51,7 @@ const ServicesSection = () => {
             <AirVent className="mr-2 pt-1  size-6" />
           </ServicesCard>
           </Link>
-          <Link href='/services/supplychain'>
+          <Link href='/services/construction'>
           <ServicesCard
             imageSrc={Box.src}
             title="General Supply Services"
