@@ -51,7 +51,7 @@ const SupplyChainServices = () => {
           <h3 className="text-2xl sm:text-3xl mb-4 sm:mb-6 font-bold text-center md:text-left">
             Procurement Management
           </h3>
-          <p className="text-base sm:text-lg md:text-xl text-justify mb-6">
+          <p className="text-lg sm:text-lg md:text-xl text-justify mb-6">
             We source a wide range of premium construction materials from
             trusted suppliers across the globe, ensuring that our projects are
             supported by the best resources available. From raw materials to
@@ -74,7 +74,7 @@ src={Proman}
           <h3 className="text-2xl sm:text-3xl mb-4 sm:mb-6 font-bold text-center md:text-left">
             Logistics and Transportation Services
           </h3>
-          <p className="text-base sm:text-lg md:text-xl text-justify mb-6">
+          <p className="text-lg sm:text-lg md:text-xl text-justify mb-6">
             We manage the entire transportation process to ensure that all
             materials are delivered efficiently and on time. Working with
             top-tier logistics partners, we guarantee that everything from bulk
@@ -106,7 +106,7 @@ src={Proman}
 
       <div className="grid grid-cols-1 bg-darkwall rounded-lg gap-6 sm:gap-8 md:grid-cols-2 mb-12">
         <div className="p-6 sm:p-10">
-          <p className="text-base sm:text-lg md:text-xl text-justify mb-6">
+          <p className="text-lg sm:text-lg md:text-xl text-justify mb-6">
             During a recent visit to a leading air conditioning manufacturing facility 
             in China, the CEO of Concept Future gained profound insights into cutting-edge 
             technological innovations. Through direct interactions with specialized 
@@ -131,7 +131,7 @@ src={Ceo1}                alt="CEO Visit Image  1"
           </div>
         </div>
         <div className="p-6 sm:p-10">
-          <p className="text-base sm:text-lg md:text-xl text-justify mb-6">
+          <p className="text-lg sm:text-lg md:text-xl text-justify mb-6">
             The visit offered a comprehensive understanding of the facility's 
             sophisticated production processes and collaborative approach. This 
             meaningful exchange has strengthened strategic partnerships between 
