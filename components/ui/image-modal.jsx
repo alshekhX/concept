@@ -15,7 +15,7 @@ export const ImageModal = ({ src, onClose }) => {
           onClick={onClose}
         >
           <motion.div 
-            className="relative lg:max-w-[50%] max-w-[80%] max-h-[80%] w-auto h-auto"
+            className="relative lg:max-w-[40%] max-w-[80%] max-h-[80%] w-auto h-auto"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.8, opacity: 0 }}
