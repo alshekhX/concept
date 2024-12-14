@@ -15,7 +15,7 @@ const Footer = () => {
                       <h2 class="mb-6 text-sm font-semibold uppercase dark:text-white">Pages</h2>
                       <ul class="text-gray-500 dark:text-gray-400 font-medium">
                           <li class="mb-4">
-                              <a href="/home" class="hover:underline">Home</a>
+                              <a href="/" class="hover:underline">Home</a>
                           </li>
                           <li class="mb-4">
                               <a href="/about" class="hover:underline">About</a>
