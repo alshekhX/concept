@@ -6,74 +6,65 @@ import Project from "./Project";
 import Tubuk from "@/assets/images/projects/tubuk.jpg";
 import Madina from "@/assets/images/projects/madinak.jpg";
 import Musta from "@/assets/images/projects/musta.jpg";
+import {useTranslations} from 'next-intl'
+
 
 const ProjectSection = () => {
+
+  const t = useTranslations('HomePage.ProjectSection')
   return (
     <div className="text-black px-4 ">
       <div className="  container mx-auto   py-20 md:py-32 flex flex-col">
         <DividerTitle
-          title="Projects"
+          title={t('sectionTitle')}
           dividerWidth={"80px"}
           textColor="text-black"
           dividerColor="bg-black opacity-85"
         />
-        <HomeSubtitle title="Expert solutions for every project." style="" />
+        <HomeSubtitle title={t('sectionSubtitle')} style="" />
 
         <Project
-          title="Tubuk Housing Project"
+          title={t('projects.0.title')}
           imgSrc={Tubuk.src}
-          des="The Tabuk Valley project embodies the concepts of 
-exemplary housing and modern living with global 
-standards of luxury, designed to be model and 
-sustainable. Located within the urban scope, Tabuk 
-Valley stands out with its proximity to key city 
-arteries."
+          des={t('projects.0.description')}
         >
           <h3 className=" text-xl font-normal opacity-80 w-4/5 md:w-full">
             {" "}
-            Concrete Works, Finishes, and HVAC Works.
-          </h3>
+            {t('projects.0.details')}          </h3>
         </Project>
 
         <div className="divider my-12 md:my-24"></div>
 
         <Project
-          title="Madinag Housing (Ard Alnaql)"
+          title={t('projects.1.title')}
           imgSrc={Madina.src}
-          des=" We are a limited liability company based in Tabuk, 
-Saudi Arabia. Founded on over 20 years of 
-cumulative experience through our institutions, we 
-specialize in government projects and have gained 
-extensive expertise in the Saudi market."
+          des={t('projects.1.description')}
+
         >
              <h3 className="text-xl mb-1 font-normal opacity-75 w-5/6 md:w-full">
-            Concrete and Construction:
+        {t('projects.1.details.0.category')}
           </h3>
-          <p className="opacity-85 mb-3"> 10 buildings, each with 5 floors</p>
+          <p className="opacity-85 mb-3">         {t('projects.1.details.0.description')}
+</p>
           <h3 className="text-xl  mb-1 font-normal opacity-75 w-5/6 md:w-full">
             {" "}
-            HVAC Works:
+            {t('projects.1.details.1.category')}
           </h3>
-          <p className="opacity-85"> Installation of 8,800 units</p>
-          <p className="opacity-85"> Installation of 8,800 units</p>
+          <p className="opacity-85">         {t('projects.1.details.1.description')}
+</p>
         </Project>
 
         <div className="divider my-24"></div>
 
         <Project
-          title="Establishing the Barq Al Mustaqbal
- Headquarters"
+                   title={t('projects.2.title')}
+
           imgSrc={Musta.src}
-          des=" We are a limited liability company based in Tabuk, 
- Saudi Arabia. Founded on over 20 years of 
- cumulative experience through our institutions, we 
- specialize in government projects and have gained 
- extensive expertise in the Saudi market"
+          des={t('projects.2.description')}
         >
 
 <h3 className="text-xl font-normal opacity-80 w-5/6 ">
-            Concrete construction and full foundation setup, including HVAC
-            installations, wooden doors, and marble supplies.
+{t('projects.2.details')}
           </h3>
       
         </Project>

@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslations } from "next-intl";
 import {
   FaMoneyBill,
   FaTruck,
@@ -11,49 +12,51 @@ import DividerTitle from "./DividerTitle";
 import HomeSubtitle from "./HomeSubtitle";
 
 const StatisticSection = () => {
+  const t = useTranslations('HomePage.StatisticSection');
+
   return (
     <div className="bg-bejj">
-      <div className=" container mx-auto px-4  py-20 md:py-32 flex flex-col ">
+      <div className="container mx-auto px-4 py-20 md:py-32 flex flex-col">
         <DividerTitle
-          title="Statistics"
+          title={t('sectionTitle')}
           dividerWidth={"90px"}
           textColor="text-lightBejj"
           dividerColor="bg-white opacity-85"
         />
         <HomeSubtitle
-          title="Experience You Can Trust"
+          title={t('sectionSubtitle')}
           style=" text-lightBejj"
         />
 
-        <div className="pt-10 flex flex-col  w-3/4 mx-auto">
-          <div className="grid  lg:mb-12 lg:grid-cols-3 grid-cols-1  items-center justify-items-center">
+        <div className="pt-10 flex flex-col w-3/4 mx-auto">
+          <div className="grid lg:mb-12 lg:grid-cols-3 grid-cols-1 items-center justify-items-center">
             <MovingCompanyState
-              state="Point of Sales"
+              state={t('statistics.0.state')}
               icon={<FaMoneyBill />}
-              companyCount={5}
+              companyCount={t('statistics.0.numbers')}
             />
             <MovingCompanyState
-              state="Vehicles"
+              state={t('statistics.1.state')}
               icon={<FaTruck />}
-              companyCount={50}
+              companyCount={t('statistics.1.numbers')}
             />
             <MovingCompanyState
-              state="Employee"
+              state={t('statistics.2.state')}
               icon={<FaPersonBooth />}
-              companyCount={90}
+              companyCount={t('statistics.2.numbers')}
             />
           </div>
 
-          <div className="grid   items-center justify-items-center align-middle  lg:grid-cols-2">
+          <div className="grid items-center justify-items-center align-middle lg:grid-cols-2">
             <MovingCompanyState
-              state="Local Brands"
+              state={t('statistics.3.state')}
               icon={<FaCity />}
-              companyCount={7}
+              companyCount={t('statistics.3.numbers')}
             />
             <MovingCompanyState
-              state="Project"
+              state={t('statistics.4.state')}
               icon={<FaTruck />}
-              companyCount={8}
+              companyCount={t('statistics.4.numbers')}
             />
           </div>
         </div>

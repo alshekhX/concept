@@ -6,7 +6,7 @@ function ServicesCard({ imageSrc, title, description, children }) {
       <img src={imageSrc} alt={title} className="card-image" />
       <div className="card-content h-80">
        <div className=' flex mb-2 '> {children}<h2 className="card-title">{title}</h2></div>
-        <p className="card-description  mt-auto">{description}</p>   
+        <p className="card-description    mt-auto">{description}</p>   
 
       </div>
     </div>

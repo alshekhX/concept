@@ -2,15 +2,17 @@ import React from "react";
 import Divider from "@/components/Divider";
 import ConstructionHero from "@/components/services/construction/CMShero";
 import ConstrutionApp from "@/components/services/construction/ConstructionApp";
-
+import { useTranslations } from "next-intl";
 const ConstructionPage = () => {
+
+  const t = useTranslations('ConstructionPage.Hero')
   return (
     <div>
       <ConstructionHero
-        title="Construction"
-        subtitle="We specialize in innovative concrete construction, offering traditional and modern solutions. We prioritize quality and efficiency to ensure timely project completion."
+        title={t('title')}
+        subtitle={t('subtitle')}
       >
-        Modern Concrete <br /> Solutions, Built to Last.
+       {t('heading1')}   <br /> {t('heading2')}  
       </ConstructionHero>
       <Divider style="" />
       <ConstrutionApp />

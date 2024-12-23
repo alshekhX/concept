@@ -4,7 +4,7 @@ import Plumb from '@/assets/images/services/plum.jpg'
 import Mep from '@/assets/images/services/mep.jpg'
 import Elect from '@/assets/images/services/elec.jpg'
 import Fire from '@/assets/images/services/fire.jpg'
-
+import { useTranslations } from 'next-intl';
 import React from 'react';
 import { 
   Wind, 
@@ -21,54 +21,53 @@ import {
 } from 'lucide-react';
 import { motion } from "framer-motion";
 import Image from 'next/image';
-
-
-// Define service categories with their corresponding subclassification icons
 const serviceCategories = [
   {
-    category: 'MEP Services',
+    category: 'mep',
     services: [
-      { name: 'HVAC Variable Refrigeration Regulator (VRF)', icon: Thermometer, },
-      { name: 'Combined Air Conditioning', icon: Wind, },
-      { name: 'Multi-stage Desert Air Conditioning System (AIR20)', icon: CloudSun, },
-      { name: 'Concealed Air Conditioning System', icon: PanelTop,}
+      { name: 'vrf', icon: Thermometer },
+      { name: 'ac', icon: Wind },
+      { name: 'desert', icon: CloudSun },
+      { name: 'concealed', icon: PanelTop }
     ],
-    image:Mep
+    image: Mep
   },
   {
-    category: 'Ventilation',
+    category: 'ventilation',
     services: [
-      { name: 'Ventilation Solutions', icon: Snowflake, },
-      { name: 'Supply, Installation and Maintenance of Air Conditioning and Ventilation Systems', icon: Waves, }
+      { name: 'solutions', icon: Snowflake },
+      { name: 'maintenance', icon: Waves }
     ],
     image: Ven
   },
   {
-    category: 'Firefighting Systems',
+    category: 'firefighting',
     services: [
-      { name: 'Firefighting systems', icon: Flame,},
-      { name: 'Firealarm supply and apply', icon: Bell, }
+      { name: 'systems', icon: Flame },
+      { name: 'alarm', icon: Bell }
     ],
     image: Fire
   },
   {
-    category: 'Electrical Works',
+    category: 'electrical',
     services: [
-      { name: 'Electrices works', icon: Zap, }
+      { name: 'works', icon: Zap }
     ],
     image: Elect
   },
   {
-    category: 'Plumbing Systems',
+    category: 'plumbing',
     services: [
-      { name: 'Plumping System Maintenance', icon: Droplet},
-      { name: 'Installation', icon: Shield,  }
+      { name: 'maintenance', icon: Droplet },
+      { name: 'installation', icon: Shield }
     ],
     image: Plumb
   }
 ];
 
 const ServicesGrid = () => {
+  const t = useTranslations('MepPage.Applications');
+
   return (
     <div className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 container mx-auto max-w-7xl">
       <motion.div
@@ -78,7 +77,7 @@ const ServicesGrid = () => {
         className="flex pb-12 sm:pb-16 items-center justify-center"
       >
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 border-b-4 border-black pb-2 sm:pb-3 tracking-wide text-center">
-          Applications
+          {t('title')}
         </h1>
       </motion.div>
 
@@ -90,7 +89,7 @@ const ServicesGrid = () => {
           >
             <div className="order-2 md:order-1">
               <h2 className="text-3xl sm:text-4xl font-semibold mb-8 sm:mb-12 text-gray-800 text-center md:text-left">
-                {category.category}
+                {t(`categories.${category.category}.title`)}
               </h2>
               <ul className="space-y-4">
                 {category.services.map((service, serviceIndex) => (
@@ -102,7 +101,7 @@ const ServicesGrid = () => {
                       <service.icon className="w-6 sm:w-8 h-6 sm:h-8 text-gray-700" />
                     </div>
                     <span className="text-gray-700 text-lg sm:text-xl flex-1 text-center md:text-left">
-                      {service.name}
+                      {t(`categories.${category.category}.services.${service.name}`)}
                     </span>
                   </li>
                 ))}
@@ -111,10 +110,8 @@ const ServicesGrid = () => {
             <div className="order-1 md:order-2 w-full aspect-video md:aspect-auto">
               <div className="relative w-full h-full">
                 <img 
-                
-                
                   src={category.image.src} 
-                  alt={`${category.category} services`}
+                  alt={t(`categories.${category.category}.title`)}
                   className="w-full h-full object-cover rounded-lg"
                 />
               </div>

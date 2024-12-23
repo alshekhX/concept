@@ -5,8 +5,11 @@ import ConstructionIMG from '@/assets/images/construction.jpg'
 import MepIMG from '@/assets/images/mep.jpg'
 import SupplyChainIMG from '@/assets/images/supplychain.jpg'
 import Link from "next/link";
+import { useTranslations } from 'next-intl';
 
-const ServiceCard = ({ title, description, imgSrc, learnMore, reversed = false }) => {
+const ServiceCard = ({ serviceKey, imgSrc, learnMore, reversed = false }) => {
+  const t = useTranslations('ServicesPage.ServicesSection');
+
   return (
     <div className={`
       grid gap-8 grid-cols-1 md:grid-cols-2 mb-32 items-center 
@@ -19,7 +22,7 @@ const ServiceCard = ({ title, description, imgSrc, learnMore, reversed = false }
           ${reversed ? 'md:order-last' : ''}
         `} 
         src={imgSrc} 
-        alt={title} 
+        alt={t(`items.${serviceKey}.title`)} 
       />
       
       <div className={`
@@ -29,14 +32,14 @@ const ServiceCard = ({ title, description, imgSrc, learnMore, reversed = false }
         justify-center space-y-6
       `}>
         <div className="w-full md:w-3/4">
-        <Link href={learnMore}>
-          
-          
-          <h2 className="text-3xl  hover:underline md:text-5xl text-gray-800 font-bold">{title}</h2>
+          <Link href={learnMore}>
+            <h2 className="text-3xl hover:underline md:text-5xl text-gray-800 font-bold">
+              {t(`items.${serviceKey}.title`)}
+            </h2>
           </Link>
         </div>
         <p className="text-xl md:text-2xl w-full md:w-3/4 text-gray-700 opacity-80">
-          {description}
+          {t(`items.${serviceKey}.description`)}
         </p>
         <div className="group text-darkBlue opacity-80 w-full md:w-3/4 cursor-pointer">
           <div className="
@@ -45,9 +48,9 @@ const ServiceCard = ({ title, description, imgSrc, learnMore, reversed = false }
             transition-colors duration-300
           ">
             <Link href={learnMore}>
-            <span className="mr-2 group-hover:translate-x-1 transition-transform">
-              Learn More About Our {title} Services
-            </span>
+              <span className="mr-2 group-hover:translate-x-1 transition-transform">
+                {t('learnMore', { service: t(`items.${serviceKey}.title`) })}
+              </span>
             </Link>
             <ChevronRight 
               className="
@@ -67,52 +70,36 @@ const ServiceCard = ({ title, description, imgSrc, learnMore, reversed = false }
 const ServicesSec = () => {
   const services = [
     {
-      title: "Construction",
-      description: "We deliver comprehensive construction solutions for government and private sector projects. We specialize in high-quality, innovative building services that meet international standards, providing efficient and reliable construction expertise across diverse project types.",
+      serviceKey: "construction",
       imgSrc: ConstructionIMG.src,
       reversed: false,
-      link:"/services/construction"
+      link: "/services/construction"
     },
     {
-      title: "MEP",
-      description: "We provide top-tier MEP services including HVAC, refrigeration, electrical, plumbing, and firefighting systems for government and private clients. Our commitment to quality and innovation ensures efficient, reliable solutions that meet international and Saudi standards.",
+      serviceKey: "mep",
       imgSrc: MepIMG.src,
       reversed: true,
-      link:"/services/mep"
-
+      link: "/services/mep"
     },
     {
-      title: "Supply Chain",
-      description: "Concept Future Supply Chain Services optimizes logistics and procurement solutions for businesses. We provide end-to-end supply chain management, leveraging innovative strategies to enhance efficiency, reduce costs, and ensure seamless operations for our clients across various industries.",
+      serviceKey: "supplyChain",
       imgSrc: SupplyChainIMG.src,
       reversed: false,
-      link:"/services/supplychain"
-
+      link: "/services/supplychain"
     }
   ];
 
   return (
-    <div className=" self-end
-      px-4 sm:px-6 lg:px-8 
-      py-16 md:py-36 
-      flex flex-col 
-      container 
-      mx-auto
-    ">
-
-
+    <div className="self-end px-4 sm:px-6 lg:px-8 py-16 md:py-36 flex flex-col container mx-auto">
       {services.map((service, index) => (
         <ServiceCard 
           key={index}
-          title={service.title}
-          description={service.description}
+          serviceKey={service.serviceKey}
           imgSrc={service.imgSrc}
           reversed={service.reversed}
           learnMore={service.link}
         />
       ))}
-
-
     </div>
   );
 };

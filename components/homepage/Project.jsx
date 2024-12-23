@@ -1,7 +1,10 @@
 import React from 'react'
 import { DivAnimate } from '../animation/DivAnimate'
+import {useTranslations} from 'next-intl'
+
 
 const Project = ({title, des, children, imgSrc}) => {
+  const t = useTranslations('HomePage.ProjectSection')
   return (
     <div>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6 items-center'> 
@@ -9,7 +12,7 @@ const Project = ({title, des, children, imgSrc}) => {
           <h1 className='text-2xl sm:text-3xl mb-5 underline opacity-90'>{title}</h1>
           <h1 className='mb-10'>{children}</h1>
           <p className='md:text-xl text-lg text-justify md:mb-0 mb-5 w-5/6 opacity-85'>
-            <span className='font-semibold'>About Project: </span> 
+            <span className='font-semibold'>{ `${t('aboutProject')}: `} </span> 
             {des}
           </p>
         </div>

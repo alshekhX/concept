@@ -1,11 +1,12 @@
-
-
 "use client"
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Divider from '../Divider';
+import { useTranslations,useLocale } from 'next-intl';
 
 const ContactForm = () => {
+  const t = useTranslations('ContactPage.ContactForm');
+  const locale= useLocale();
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -41,7 +42,8 @@ const ContactForm = () => {
 
   return (
     <motion.section 
-      className=" mx-auto container"
+      className="mx-auto container"
+      dir={`${locale=="ar"?"rtl":"ltr"}`}
       initial="initial"
       whileInView="animate"
       viewport={{ once: true, amount: 0.2 }}
@@ -55,17 +57,26 @@ const ContactForm = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-Have Any Questions?        </motion.h2>
+          {t('title')}
+        </motion.h2>
+        <motion.p
+          className="text-lg text-center text-gray-600 mb-12"
+          initial={{ opacity: 0, y: -10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          {t('subtitle')}
+        </motion.p>
         <motion.form 
           onSubmit={handleSubmit}
-          className=" shadow-sm border border-opacity-20 border-darkBlue rounded-lg p-8 space-y-6"
+          className="shadow-sm border border-opacity-20 border-darkBlue rounded-lg p-8 space-y-6"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
           <motion.div variants={inputVariants}>
             <label htmlFor="fullName" className="block text-gray-700 mb-2">
-              Full Name
+              {t('fullNameLabel')}
             </label>
             <input
               type="text"
@@ -75,13 +86,13 @@ Have Any Questions?        </motion.h2>
               onChange={handleChange}
               required
               className="w-full px-3 py-2 border bg-wall border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Enter your full name"
+              placeholder={t('fullNamePlaceholder')}
             />
           </motion.div>
 
           <motion.div variants={inputVariants}>
             <label htmlFor="email" className="block text-gray-700 mb-2">
-              Email Address
+              {t('emailLabel')}
             </label>
             <input
               type="email"
@@ -91,13 +102,13 @@ Have Any Questions?        </motion.h2>
               onChange={handleChange}
               required
               className="w-full px-3 py-2 bg-wall border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Enter your email address"
+              placeholder={t('emailPlaceholder')}
             />
           </motion.div>
 
           <motion.div variants={inputVariants}>
             <label htmlFor="comments" className="block text-gray-700 mb-2">
-              Comments or Questions
+              {t('commentsLabel')}
             </label>
             <textarea
               id="comments"
@@ -107,7 +118,7 @@ Have Any Questions?        </motion.h2>
               required
               rows={4}
               className="w-full px-3 py-2 bg-wall border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Write your comments or questions here"
+              placeholder={t('commentsPlaceholder')}
             />
           </motion.div>
 
@@ -117,7 +128,7 @@ Have Any Questions?        </motion.h2>
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Send Message
+            {t('submitButton')}
           </motion.button>
         </motion.form>
       </div>

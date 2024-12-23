@@ -3,20 +3,15 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation'
+import { useTranslations } from 'next-intl';
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion';
 import Main from '@/assets/images/logo/main.png'
 import Image from 'next/image';
-
-const NAV_LINKS = [
-  { href: '/', label: 'Home' },
-  { href: '/services', label: 'Services' },
-  { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
-  { href: '/projects', label: 'Projects' }
-];
+import LanguageSwitcher from './LanSwitcher';
 
 const Navbar = () => {
+  const t = useTranslations('Navbar');
   const pathName = usePathname();
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,6 +52,8 @@ const Navbar = () => {
     }
   };
 
+  const NAV_LINKS = t.raw('navLinks');
+
   return (
     <header className={`
       bg-wall sticky top-0 z-50 shadow-md 
@@ -79,13 +76,10 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <ul className={`
-          hidden md:flex absolute left-1/2 transform -translate-x-1/2 
-          space-x-8 items-center 
-          transition-all duration-300 ease-in-out
-          ${isScrolled ? 'text-base' : 'text-xl'}
+          hidden md:flex items-center 
         `}>
           {NAV_LINKS.map((link) => (
-            <li key={link.href}>
+            <li key={link.href} className=' mx-4 '>
               <Link 
                 href={link.href} 
                 className={`
@@ -99,25 +93,18 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Call to Action Button */}
-        <Link 
-          href="/contact" 
-          className={`
-          rounded-full px-4 py-2 md:flex hidden bg-darkBlue text-white hover:bg-opacity-90 transition-colors
-          ${isScrolled ? 'text-base' : 'text-xl'}
-          `}
-        >
-          Get Started
-        </Link>
+        {/* lang button */}
+        <LanguageSwitcher display='md:block hidden'/>
 
         {/* Mobile Navigation Toggle */}
         <button 
           onClick={toggleMobileNav} 
           className="md:hidden text-2xl focus:outline-none z-50"
-          aria-label={isMobileNavOpen ? "Close menu" : "Open menu"}
+          aria-label={isMobileNavOpen ? t('ariaMenuClose') : t('ariaMenuOpen')}
         >
           {isMobileNavOpen ? <FaTimes /> : <FaBars />}
         </button>
+        
 
         {/* Mobile Navigation Menu */}
         <AnimatePresence>
@@ -144,9 +131,9 @@ const Navbar = () => {
                     </Link>
                   </li>
                 ))}
-                
-                {/* Mobile Call to Action */}
-           
+                <li>
+                  <LanguageSwitcher />
+                </li>
               </ul>
             </motion.div>
           )}

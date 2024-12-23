@@ -1,32 +1,47 @@
-import React from 'react'
-import { AnimateH1 } from '../animation/H1Animate'
-import { AnimateH2 } from '../animation/H2Animate'
+import React from "react";
+import { AnimateH1 } from "../animation/H1Animate";
+import { AnimateH2 } from "../animation/H2Animate";
+import { useTranslations } from "next-intl";
 
 import BackImage from "@/assets/images/backabout.jpg";
-import Image from 'next/image'
+import Image from "next/image";
 
 const AboutHero = () => {
+  const t = useTranslations("AboutPage.AboutHero");
 
   return (
-    <div> <div className="grid text-wall  grid-cols-1 relative">
-    <div className=" absolute inset-0 z-20 container mx-auto ">
-  <div className=' mx-auto flex flex-col h-full  justify-center  px-4 py-10 '>
-   <AnimateH1 initial={{ opacity: 0, y: 10 }}
-  whileInView={{ opacity: 1, y: 0 }}   transition={{ delay: 0,duration:.3}}  className="  z-10 md:text-6xl xl:text-8xl text-6xl mb-4 font-bold text-white">About</AnimateH1>
-  <AnimateH2  initial={{ opacity: 0, y: -20 }}
-  whileInView={{ opacity: 1, y: 0 }}   transition={{ delay: .3,duration:.3}}  className="  md:w-2/5 w-5/6 z-10 xl:text-3xl sm:text-2xl text-xl  text-white">Explore Our Vision, Values, and Goals Committed to Integrity, Sustainability, and Positive Impact Through Responsible Business Practices and Community Empowerment</AnimateH2>
-</div>
+    <div>
+      {" "}
+      <div className="grid text-wall  grid-cols-1 relative">
+        <div className=" absolute inset-0 z-20 container mx-auto ">
+          <div className=" mx-auto flex flex-col h-full  justify-center  px-4 py-10 ">
+            <AnimateH1
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0, duration: 0.3 }}
+              className="  z-10 md:text-6xl xl:text-8xl text-6xl mb-4 font-bold text-white"
+            >
+              {t('title')}
+            </AnimateH1>
+            <AnimateH2
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.3 }}
+              className="  md:w-2/5 w-5/6 z-10 xl:text-3xl sm:text-2xl text-xl  text-white"
+            >
+                          {t('subtitle')}
 
+            </AnimateH2>
+          </div>
+        </div>
 
-  </div>
+        <div className="relative">
+          <div className=" absolute inset-0 z-10  bg-darkBlue opacity-95   "></div>
+          <Image className=" hero-container   w-full" src={BackImage} />{" "}
+        </div>
+      </div>
+    </div>
+  );
+};
 
-
-<div className='relative'>
-<div className=" absolute inset-0 z-10  bg-darkBlue opacity-95   "></div>
-
-<Image className=' hero-container   w-full' src={BackImage} /> </div>
-</div></div>
-  )
-}
-
-export default AboutHero
+export default AboutHero;

@@ -2,8 +2,11 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useLocale } from "next-intl";
 
 const LogoSlider = ({ logos }) => {
+
+  const locale = useLocale();
   return (
     <div className="container pt-11 ">
       
@@ -15,7 +18,7 @@ const LogoSlider = ({ logos }) => {
             repeat: Infinity,
           }}
           initial={{ translateX: 0 }}
-          animate={{ translateX: "-50%" }}
+          animate={{ translateX:  locale=="ar"?"50%":"-50%" }}
           className="flex flex-none sm:gap-20 gap-16 md:gap-24 pr-16"
         >
           {[...new Array(2)].fill(0).map((_, index) => (

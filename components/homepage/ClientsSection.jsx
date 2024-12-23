@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslations, useLocale } from 'next-intl'
 import LogoSlider from './LogoSlider'
 import DividerTitle from './DividerTitle'
 import HomeSubtitle from './HomeSubtitle'
@@ -11,56 +12,66 @@ import comp6 from '@/assets/images/logo/47.png'
 import comp7 from '@/assets/images/logo/48.png'
 import comp8 from '@/assets/images/logo/49.png'
 
-
 const ClientsSection = () => {
- const logos=[
+  const t = useTranslations('HomePage.ClientsSection')
+  const locale = useLocale()
 
+  const logos = [
     {
-        src:comp1.src,
-        alt:""
-    }, {
-        src:comp2.src,
-        alt:""
+      src: comp1.src,
+      alt: t('logoAltTexts.0')
     }, 
     {
-        src:comp3.src,
-        alt:""
-    },  {
-        src:comp4.src,
-        alt:""
-    }, {
-        src:comp5.src,
-        alt:""
+      src: comp2.src,
+      alt: t('logoAltTexts.1')
     }, 
     {
-        src:comp6.src,
-        alt:""
+      src: comp3.src,
+      alt: t('logoAltTexts.2')
+    },  
+    {
+      src: comp4.src,
+      alt: t('logoAltTexts.3')
     }, 
     {
-        src:comp7.src,
-        alt:""
+      src: comp5.src,
+      alt: t('logoAltTexts.4')
     }, 
     {
-        src:comp8.src,
-        alt:""
+      src: comp6.src,
+      alt: t('logoAltTexts.5')
     }, 
-    
- ]
-
+    {
+      src: comp7.src,
+      alt: t('logoAltTexts.6')
+    }, 
+    {
+      src: comp8.src,
+      alt: t('logoAltTexts.7')
+    }
+  ]
 
   return (
-    
-        <div className=' container mx-auto px-4 py-20 md:py-32 flex flex-col'>
-        <DividerTitle title='Our Clients'  dividerWidth={'120px'} textColor='text-black' dividerColor='bg-black opacity-85'/>
-        <HomeSubtitle title='Dedicated to exceeding expectations.' style=''/>
+    <div 
+      className={`container mx-auto px-4 py-20 md:py-32 flex flex-col ${locale === 'ar' ? 'rtl' : 'ltr'}`}
+     
+    >
+      <DividerTitle 
+        title={t('sectionTitle')} 
+        dividerWidth={'120px'} 
+        textColor='text-black' 
+        dividerColor='bg-black opacity-85'
+      />
+      <HomeSubtitle 
+        title={t('sectionSubtitle')} 
+        style=''
+      />
 
-            <div className='container mx-auto'>
-    
-    <LogoSlider  logos={logos}/>
+      <div className='container mx-auto'>
+        <LogoSlider logos={logos} />
+      </div>
     </div>
-    
-        </div>
-       )
+  )
 }
 
 export default ClientsSection

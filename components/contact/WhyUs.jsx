@@ -1,29 +1,32 @@
 "use client"
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import { Building2, Lightbulb, Shield, Clock } from 'lucide-react';
 
 const WhyUs = () => {
+  const t = useTranslations('ContactPage.WhyUs');
+
   const features = [
     {
       icon: <Building2 className="w-10 h-10 md:w-12 md:h-12 text-black" />,
-      title: 'Expertise',
-      description: 'Decades of experience in handling complex construction and MEP projects.',
+      title: t('features.0.title'),
+      description: t('features.0.description'),
     },
     {
       icon: <Lightbulb className="w-10 h-10 md:w-12 md:h-12 text-black" />,
-      title: 'Innovation',
-      description: 'Embracing advanced technologies and sustainable practices.',
+      title: t('features.1.title'),
+      description: t('features.1.description'),
     },
     {
       icon: <Clock className="w-10 h-10 md:w-12 md:h-12 text-black" />,
-      title: 'Reliability',
-      description: 'A proven track record of delivering projects on time and within budget.',
+      title: t('features.2.title'),
+      description: t('features.2.description'),
     },
     {
       icon: <Shield className="w-10 h-10 md:w-12 md:h-12 text-black" />,
-      title: 'Safety First',
-      description: 'Unwavering commitment to occupational health and safety standards.',
+      title: t('features.3.title'),
+      description: t('features.3.description'),
     }
   ];
 
@@ -69,7 +72,7 @@ const WhyUs = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Why Choose Us?
+          {t('title')}
         </motion.h2>
         <motion.div 
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"

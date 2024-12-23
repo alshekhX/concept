@@ -1,0 +1,410 @@
+{
+  "Navbar": {
+    "navLinks": [
+      {
+        "href": "/",
+        "label": "Home"
+      },
+      {
+        "href": "/services",
+        "label": "Services"
+      },
+      {
+        "href": "/about",
+        "label": "About"
+      },
+      {
+        "href": "/contact",
+        "label": "Contact"
+      },
+      {
+        "href": "/projects",
+        "label": "Projects"
+      }
+    ],
+    "getStarted": "Get Started",
+    "ariaMenuOpen": "Open menu",
+    "ariaMenuClose": "Close menu"
+  },
+  "HomePage": {
+    "Hero": {
+      "title": "Concept",
+      "subtitle": "Building the Future, One Project at a Time. Emphasizing Commitment to Saudi Arabia's Vision."
+    },
+    "WhoUs": {
+      "sectionTitle": "Who Are We",
+      "subtitleText": "Your Local Partner, Global Standards",
+      "description": "We specialize in construction and finishing contracting, MEP services (supply, implementation, maintenance), and general supplies. With extensive experience and a solid reputation, we are a trusted partner in delivering high-quality products and services.",
+      "imageAlt": {
+        "show1": "Mep services",
+        "show2": "Electrical services",
+        "show3": "Electrical services",
+        "show4": "Mep services"
+      }
+    },
+    "ServicesSection": {
+      "sectionTitle": "Our Services",
+      "sectionSubtitle": "We offer Quality craftsmanship, reliable solutions, and exceptional service.",
+      "services": [
+        {
+          "title": "Construction and Finishing Contracting",
+          "description": "Providing comprehensive engineering design services, efficient project management, and specialized technical consultations to deliver innovative and sustainable engineering solutions for all building types and projects."
+        },
+        {
+          "title": "MEP Services",
+          "description": "We provide top-tier MEP services including HVAC, refrigeration, electrical, plumbing, and firefighting systems for government and private clients. Our commitment to quality and innovation ensures efficient, reliable solutions that meet international and Saudi standards."
+        },
+        {
+          "title": "General Supply Services",
+          "description": "Providing a comprehensive range of building materials, industrial equipment, and daily consumables to meet diverse construction and operational needs."
+        }
+      ]
+    },
+    "ProjectSection": {
+      "sectionTitle": "Projects",
+      "sectionSubtitle": "Expert solutions for every project.",
+      "aboutProject": "About Project: ",
+      "projects": [
+        {
+          "title": "Tubuk Housing Project",
+          "description": "The Tabuk Valley project embodies the concepts of exemplary housing and modern living with global standards of luxury, designed to be model and sustainable. Located within the urban scope, Tabuk Valley stands out with its proximity to key city arteries.",
+          "details": "Concrete Works, Finishes, and HVAC Works."
+        },
+        {
+          "title": "Madinag Housing (Ard Alnaql)",
+          "description": "We are a limited liability company based in Tabuk, Saudi Arabia. Founded on over 20 years of cumulative experience through our institutions, we specialize in government projects and have gained extensive expertise in the Saudi market.",
+          "details": [
+            {
+              "category": "Concrete and Construction",
+              "description": "10 buildings, each with 5 floors"
+            },
+            {
+              "category": "HVAC Works",
+              "description": "Installation of 8,800 units"
+            }
+          ]
+        },
+        {
+          "title": "Establishing the Barq Al Mustaqbal Headquarters",
+          "description": "We are a limited liability company based in Tabuk, Saudi Arabia. Founded on over 20 years of cumulative experience through our institutions, we specialize in government projects and have gained extensive expertise in the Saudi market",
+          "details": "Concrete construction and full foundation setup, including HVAC installations, wooden doors, and marble supplies."
+        }
+      ]
+    },
+    "StatisticSection": {
+      "sectionTitle": "Statistics",
+      "sectionSubtitle": "Experience You Can Trust",
+      "statistics": [
+        {
+          "state": "Point of Sales",
+          "numbers": "5"
+        },
+        {
+          "state": "Vehicles",
+          "numbers": "50"
+        },
+        {
+          "state": "Employee",
+          "numbers": "90"
+        },
+        {
+          "state": "Local Brands",
+          "numbers": "7"
+        },
+        {
+          "state": "Project",
+          "numbers": "8"
+        }
+      ]
+    },
+    "ClientsSection": {
+      "sectionTitle": "Our Clients",
+      "sectionSubtitle": "Dedicated to exceeding expectations.",
+      "logoAltTexts": [
+        "Client Logo 1",
+        "Client Logo 2",
+        "Client Logo 3",
+        "Client Logo 4",
+        "Client Logo 5",
+        "Client Logo 6",
+        "Client Logo 7",
+        "Client Logo 8"
+      ]
+    }
+  },
+  "AboutPage": {
+    "AboutHero": {
+      "title": "About",
+      "subtitle": "Explore Our Vision, Values, and Goals Committed to Integrity, Sustainability, and Positive Impact Through Responsible Business Practices and Community Empowerment"
+    },
+    "AboutGoals": {
+      "title": "Goals",
+      "paragraph1": "In Concept General Contracting Company in Saudi Arabia, we strive to achieve our goals by providing the best services and products in the fields of construction and finishing contracting, MEP, and general supplies in the evolving Saudi market. We are committed to delivering high-quality products that combine excellent performance with superior aesthetics, always focusing on achieving the perfect balance between quality and cost",
+      "paragraph2": "Our primary mission is to help our clients in Saudi Arabia achieve their goals and exceed their expectations by providing solutions tailored to their needs. We aim to accomplish this by offering exceptional services and innovative products that reflect our vision of sustainability and innovation in supply and installation.",
+      "paragraph3": "We seek to manufacture our products within the Kingdom in collaboration with our Chinese and Egyptian partners, supporting the vision of the Crown Prince and the Custodian of the Two Holy Mosques to enhance local industry and achieve sustainable development. This step stems from our commitment to supporting the national economy without compromising the renowned quality and efficiency of our products."
+    },
+    "AboutValues": {
+      "title": "Values",
+      "paragraph1": "Concept General Contracting Company is distinguished by its values of excellence and quality. We are committed to providing high-quality services in the fields of construction and finishing contracting, MEP, and general supplies, aiming to achieve customer satisfaction and excellence in the Saudi Arabian market.",
+      "paragraph2": "We strive to build lasting relationships with our clients by offering innovative solutions and unique experiences, with a constant focus on quality and innovation."
+    },
+    "AboutVisions": {
+      "vision": "Vision",
+      "paragraph1": "At Concept General Contracting Company, our vision is to be the leading partner in the fields of construction and finishing contracting, MEP, and general supplies in our beloved Kingdom of Saudi Arabia",
+      "paragraph2": "We strive to achieve a prominent position as the top choice for our clients by providing exceptional products and services that exceed their expectations. In this context, we aim to build long-term relationships with our clients by offering innovative solutions and outstanding value"
+    }
+  },
+  "ContactPage": {
+    "ContactHero": {
+      "title": "Contact Us",
+      "subtitle": "Have a specific inquiry or need assistance? Our dedicated team is ready to provide expert guidance and support. Contact us today to discuss your requirements."
+    },
+    "WhyUs": {
+      "title": "Why Choose Us?",
+      "features": [
+        {
+          "title": "Expertise",
+          "description": "Decades of experience in handling complex construction and MEP projects."
+        },
+        {
+          "title": "Innovation",
+          "description": "Embracing advanced technologies and sustainable practices."
+        },
+        {
+          "title": "Reliability",
+          "description": "A proven track record of delivering projects on time and within budget."
+        },
+        {
+          "title": "Safety First",
+          "description": "Unwavering commitment to occupational health and safety standards."
+        }
+      ]
+    },
+    "ContactForm": {
+      "title": "Get a Quotation",
+      "subtitle": "Share your project details with us and we will contact you immediately to provide you with an initial estimate",
+      "fullNameLabel": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "commentsLabel": "Project Details",
+      "commentsPlaceholder": "Share your project details with us",
+      "submitButton": "Send Message"
+    },
+    "Map": {
+      "title": "Visit Our Location",
+      "location": "Uthman Ibn Affan Road, An Narjis Neighborhood, Riyadh, Saudi Arabia"
+    }
+  },
+  "ProjectsPage": {
+    "ProjectHero": {
+      "HeroTitle": "Projects",
+      "HeroSubtitle": "See Our Work in Action"
+    },
+    "ConstructionProjects": {
+      "title": "Construction Projects",
+      "projects": [
+        {
+          "title": "Tubuk Housing Projects",
+          "subtitle": "Concrete Works, Finishes, and HVAC Works"
+        },
+        {
+          "title": "Establishing Barq Al Mustaqbal Headquarters",
+          "subtitle": "Concrete Construction and Full Foundation Setup, Including HVAC Installations, Wooden Doors, and Marble Supplies"
+        },
+        {
+          "title": "Madina Housing (Ard Alnaql)",
+          "subtitle": "85 Buildings (1870 Units)"
+        }
+      ]
+    },
+    "MepProjects": {
+      "title": "MEP Projects",
+      "projects": [
+        {
+          "title": "Najran Housing Project",
+          "subtitle": "The Najran project encompasses a comprehensive scope of work, including concrete works, the application of high-quality finishes, and the installation of HVAC systems."
+        },
+        {
+          "title": "Riyadh Al-Khubra (AlQassim) Project",
+          "subtitle": "The project involves 10 villas, installation of 200 indoor and outdoor units, and 1290 meters of copper piping"
+        },
+        {
+          "title": "Canteen Project (The Red Sea)",
+          "subtitle": "Installation of rough-in pipes for drainage, waste, and water supply lines, as well as the integration of pipes within the concrete structure at a construction site."
+        }
+      ]
+    }
+  },
+  "ServicesPage": {
+    "ServicesHero": {
+      "title": "Services",
+      "subtitle": "We're your one-stop solution for all your MEP construction and supply chain requirements"
+    },
+    "ServicesSection": {
+      "learnMore": "Learn More About Our {service} Services",
+      "items": {
+        "construction": {
+          "title": "Construction",
+          "description": "We deliver comprehensive construction solutions for government and private sector projects. We specialize in high-quality, innovative building services that meet international standards, providing efficient and reliable construction expertise across diverse project types."
+        },
+        "mep": {
+          "title": "MEP",
+          "description": "We provide top-tier MEP services including HVAC, refrigeration, electrical, plumbing, and firefighting systems for government and private clients. Our commitment to quality and innovation ensures efficient, reliable solutions that meet international and Saudi standards."
+        },
+        "supplyChain": {
+          "title": "Supply Chain",
+          "description": "Concept Future Supply Chain Services optimizes logistics and procurement solutions for businesses. We provide end-to-end supply chain management, leveraging innovative strategies to enhance efficiency, reduce costs, and ensure seamless operations for our clients across various industries."
+        }
+      }
+    }
+  },
+  "ConstructionPage": {
+    "Hero": {
+      "title": "Construction Services",
+      "subtitle": "We provide comprehensive construction services that meet the highest standards of quality and safety. Our team of experienced professionals ensures your projects are executed efficiently and on time",
+      "heading1": " Modern Concrete",
+      "heading2":"Solutions, Built to Last."
+    },
+    "Applications": {
+      "title": "Applications",
+      "sections": {
+        "aluminumFormwork": {
+          "title": "ALUMINUM FORMWORK SYSTEM",
+          "description": "Aluminum formwork systems represent a revolutionary approach to concrete construction, ensuring high efficiency, precision, and reduced construction timelines. This method employs durable and lightweight aluminum molds that are reusable and highly adaptable to complex architectural designs.",
+          "highlight": "Our company specializes in deploying this advanced technology for projects ranging from high-rise buildings to residential complexes, ensuring efficiency without compromising quality."
+        },
+        "precastConcrete": {
+          "title": "PRECAST CONCRETE WORKS",
+          "description": "Precast concrete is a modern construction technique involving the off-site casting, transportation, and assembly of concrete elements, providing high-quality, uniform, and efficient solutions for various applications including structural components (beams, columns, slabs), precast walls for buildings, and modular infrastructure projects.",
+          "highlight": "We integrate precast solutions into projects to optimize efficiency and minimize on-site disruption."
+        },
+        "traditionalConcrete": {
+          "title": "TRADITIONAL CONCRETE WORKS",
+          "description": "Traditional concrete work is a fundamental method in construction, blending manual skills with modern techniques to build strong and affordable structures. It's versatile and suitable for projects of all sizes, including residential and commercial buildings, foundations, industrial columns, and structural frameworks.",
+          "highlight": "Our expertise in traditional concrete works guarantees high standards of safety and durability for all types of projects."
+        },
+        "vinylFlooring": {
+          "title": "VINYL FLOORING WORKS",
+          "description": "Vinyl flooring is a versatile, durable, and affordable choice for residential, commercial, and industrial spaces. It's perfect for healthcare facilities, educational institutions, offices, retail spaces, and homes. Vinyl flooring comes in various designs, mimicking wood, stone, or tile finishes. It's highly resistant to moisture, stains, and scratches, and is easy to install and maintain.",
+          "highlight": "Our team ensures precise installation and premium quality materials for long lasting vinyl flooring solutions."
+        }
+      }
+    }
+  },
+  "MepPage": {
+    "Hero": {
+      "title": "MEP Services",
+      "subtitle": "We provide top-tier MEP engineering solutions (HVAC, refrigeration, electrical, plumbing, firefighting) to government and private clients, prioritizing quality, innovation, and customer satisfaction. Our work meets the highest international and Saudi standards.",
+      "heading1": "Your Vision,",
+      "heading2": "Our Expertise"
+    },
+    "Applications": {
+      "title": "Applications",
+      "categories": {
+        "mep": {
+          "title": "MEP Services",
+          "services": {
+            "vrf": "HVAC Variable Refrigeration Regulator (VRF)",
+            "ac": "Combined Air Conditioning",
+            "desert": "Multi-stage Desert Air Conditioning System (AIR20)",
+            "concealed": "Concealed Air Conditioning System"
+          }
+        },
+        "ventilation": {
+          "title": "Ventilation",
+          "services": {
+            "solutions": "Ventilation Solutions",
+            "maintenance": "Supply, Installation and Maintenance of Air Conditioning and Ventilation Systems"
+          }
+        },
+        "firefighting": {
+          "title": "Firefighting Systems",
+          "services": {
+            "systems": "Firefighting systems",
+            "alarm": "Firealarm supply and apply"
+          }
+        },
+        "electrical": {
+          "title": "Electrical Works",
+          "services": {
+            "works": "Electrices works"
+          }
+        },
+        "plumbing": {
+          "title": "Plumbing Systems",
+          "services": {
+            "maintenance": "Plumping System Maintenance",
+            "installation": "Installation"
+          }
+        }
+      }
+    }
+  },
+  "SupplyChainPage": {
+    "Hero": {
+      "title": "supply chain ",
+      "subtitle": "At Concept, we are committed to providing world-class supply chainsolutions, working with the largest and most reputable suppliers, both locally and globally.",
+      "heading1": "Beyond Boundaries",
+      "heading2": "Beyond Expectations "
+    },
+    "Applications": {
+      "title": "Supply Chain Services",
+      "intro": {
+        "paragraph1": "At Concept, we are committed to providing world-class supply chain solutions, working with the largest and most reputable suppliers, both locally and globally. Our competitive pricing and dedication to meeting international standards ensure that we deliver the highest quality materials and services for every project.",
+        "paragraph2": "We align with the market requirements, particularly focusing on the needs of the Saudi market, while adhering to global best practices. Looking ahead, we aspire to develop our own branded services across all aspects of supply chain management, creating a distinct identity that reflects our commitment to quality, innovation, and sustainability in the construction industry."
+      },
+      "services": {
+        "title": "Our Services",
+        "procurement": {
+          "title": "Procurement Management",
+          "description": "We source a wide range of premium construction materials from trusted suppliers across the globe, ensuring that our projects are supported by the best resources available. From raw materials to specialized finishes, our procurement process is designed to meet both global industry standards and the specific needs of the Saudi market. Our strategic partnerships with leading suppliers allow us to offer competitive prices while maintaining a commitment to quality."
+        },
+        "logistics": {
+          "title": "Logistics and Transportation Services",
+          "description": "We manage the entire transportation process to ensure that all materials are delivered efficiently and on time. Working with top-tier logistics partners, we guarantee that everything from bulk construction materials to specialized equipment reaches the job site without delays. Our logistics services follow best practices, optimizing the flow of goods and ensuring that materials are available when needed, which helps us avoid any disruptions to project timelines. Both of these services are built around our commitment to sustainability, in line with Saudi Arabia's Vision 2030. We integrate eco-friendly practices and ensure that our supply chain solutions minimize environmental impact while maximizing efficiency and cost-effectiveness."
+        }
+      },
+      "ceoVisit": {
+        "title": "CEO's Visit to China",
+        "paragraph1": "During a recent visit to a leading air conditioning manufacturing facility in China, the CEO of Concept Future gained profound insights into cutting-edge technological innovations. Through direct interactions with specialized engineers, he explored advanced production techniques and the latest developments in air conditioning manufacturing.",
+        "paragraph2": "The visit offered a comprehensive understanding of the facility's sophisticated production processes and collaborative approach. This meaningful exchange has strengthened strategic partnerships between the two companies and will drive future technological advancements in the industry.",
+        "images": {
+          "ceo1": "CEO Visit Image 1",
+          "ceo2": "CEO Visit Image 2",
+          "ceo3": "CEO Visit Image 3",
+          "ceo4": "CEO Visit Image 4"
+        }
+      }
+    }
+  },
+  "Footer": {
+    "brand": "Concept",
+    "pages": {
+      "title": "Pages",
+      "links": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+      }
+    },
+    "services": {
+      "title": "Services",
+      "links": {
+        "construction": "Construction",
+        "mep": "MEP",
+        "supplychain": "Supply Chain"
+      }
+    },
+    "social": {
+      "title": "Social Accounts",
+      "links": {
+        "linkedin": "LinkedIn",
+        "twitter": "Twitter",
+        "whatsapp": "WhatsApp"
+      }
+    },
+    "copyright": "© 2024 Concept. All Rights Reserved."
+  }
+}

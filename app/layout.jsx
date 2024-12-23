@@ -1,6 +1,16 @@
 import '@/assets/styles/globals.css'
 import Navbar from "@/components/Navbar.jsx";
 import Footer from '@/components/Footer';
+import {NextIntlClientProvider} from 'next-intl';
+import {getLocale, getMessages} from 'next-intl/server';
+import { Inter, Noto_Kufi_Arabic } from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin'] });
+const notoKufiArabic = Noto_Kufi_Arabic({ 
+  subsets: ['arabic'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-kufi'
+});
 
 export const metadata = {
   title: {
@@ -78,16 +88,18 @@ export const metadata = {
 
 }
 
+export default async function RootLayout({ children }) {
+  const locale = await getLocale();
+  const messages = await getMessages();
 
-export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-       >
-<Navbar/>
-       <main>{children}</main> 
-       <Footer/>
-
+    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+      <body className={`${locale === 'ar' ? notoKufiArabic.className : inter.className}`}>
+        <NextIntlClientProvider messages={messages}>
+          <Navbar/>
+          <main>{children}</main> 
+          <Footer/>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
