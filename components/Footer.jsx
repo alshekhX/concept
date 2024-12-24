@@ -83,7 +83,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://wa.me/1234567890" className="hover:underline flex items-center gap-2">
+                  <a href="https://wa.me/966539187279" className="hover:underline flex items-center gap-2">
                     <Phone size={20} /> {t('social.links.whatsapp')}
                   </a>
                 </li>

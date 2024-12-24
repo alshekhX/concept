@@ -28,7 +28,7 @@ const ProjectSection = () => {
           imgSrc={Tubuk.src}
           des={t('projects.0.description')}
         >
-          <h3 className=" text-xl font-normal opacity-80 w-4/5 md:w-full">
+          <h3 className=" text-lg md:text-xl text-gray-600 font-normal w-4/5 md:w-full">
             {" "}
             {t('projects.0.details')}          </h3>
         </Project>
@@ -41,16 +41,16 @@ const ProjectSection = () => {
           des={t('projects.1.description')}
 
         >
-             <h3 className="text-xl mb-1 font-normal opacity-75 w-5/6 md:w-full">
+             <h3 className="text-lg md:text-xl mb-1 font-normal text-gray-700 w-5/6 md:w-full">
         {t('projects.1.details.0.category')}
           </h3>
-          <p className="opacity-85 mb-3">         {t('projects.1.details.0.description')}
+          <p className="text-md text-gray-600 md:text-lg mb-3">         {t('projects.1.details.0.description')}
 </p>
-          <h3 className="text-xl  mb-1 font-normal opacity-75 w-5/6 md:w-full">
+          <h3 className="text-lg md:text-xl mb-1 font-normal text-gray-700 w-5/6 md:w-full">
             {" "}
             {t('projects.1.details.1.category')}
           </h3>
-          <p className="opacity-85">         {t('projects.1.details.1.description')}
+          <p className="text-md text-gray-600 md:text-lg">         {t('projects.1.details.1.description')}
 </p>
         </Project>
 
@@ -63,7 +63,7 @@ const ProjectSection = () => {
           des={t('projects.2.description')}
         >
 
-<h3 className="text-xl font-normal opacity-80 w-5/6 ">
+<h3 className=" text-lg md:text-xl text-gray-600 font-normal w-4/5 md:w-full">
 {t('projects.2.details')}
           </h3>
       
