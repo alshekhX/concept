@@ -9,20 +9,31 @@ const ConstructionApp = () => {
 
   const sections = [
     {
-      id: "aluminumFormwork",
-      image: "https://constrofacilitator.com/wp-content/uploads/2024/04/aluminium-formwork-scaled.webp"
+      id: "excavationBackfilling",
+      image: "https://www.horstexcavating.com/wp-content/uploads/2024/02/grading-horst-excavating.jpg"
     },
     {
-      id: "precastConcrete",
+      id: "concreteStructures",
       image: "https://constrofacilitator.com/wp-content/uploads/2020/08/precast-concrete-products.jpg"
     },
     {
-      id: "traditionalConcrete",
-      image: "https://i.ytimg.com/vi/rr8GUqABgCU/maxresdefault.jpg"
+      id: "interiorExteriorFinishing",
+      image: "https://heims.ca/wp-content/uploads/2023/06/hiems-interior-main.png"
     },
     {
-      id: "vinylFlooring",
-      image: "https://dam.thdstatic.com/content/production/11bz3P0-EIr9XX5z7elsTA/JOcQViJiDXMu9jGNR3koqg/Original%20file/how-to-install-vinyl-plank-flooring-step-7.jpg"
+      id: "infrastructureWorks",
+      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1470&auto=format&fit=crop"
+    },
+    {
+      id: "residentialProjects", 
+      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1470&auto=format&fit=crop"
+    }, {
+      id: "commercialProjects",
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1470&auto=format&fit=crop"
+    },
+    {
+      id: "industrialProjects",
+      image: "https://idealconstruction.co.in/wp-content/uploads/2024/05/xcxzsdsd.jpg"
     }
   ];
 

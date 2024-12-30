@@ -2,11 +2,12 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Divider from '../Divider';
-import { useTranslations,useLocale } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 const ContactForm = () => {
   const t = useTranslations('ContactPage.ContactForm');
-  const locale= useLocale();
+  const locale = useLocale();
+  const [status, setStatus] = useState('');
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -21,10 +22,26 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add form submission logic here
-    console.log('Form submitted:', formData);
+    setStatus('sending');
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ fullName: '', email: '', comments: '' });
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      setStatus('error');
+    }
   };
 
   const inputVariants = {
@@ -32,11 +49,7 @@ const ContactForm = () => {
     animate: { 
       opacity: 1, 
       y: 0,
-      transition: { 
-        type: 'spring', 
-        damping: 12, 
-        stiffness: 100 
-      }
+      transition: { type: 'spring', damping: 12, stiffness: 100 }
     }
   };
 
@@ -48,8 +61,7 @@ const ContactForm = () => {
       whileInView="animate"
       viewport={{ once: true, amount: 0.2 }}
     >
-        <Divider style=''/>
-
+      <Divider style=''/>
       <div className="container py-32 mx-auto px-4 max-w-4xl">
         <motion.h2 
           className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-8 sm:mb-12 text-gray-800"
@@ -85,8 +97,9 @@ const ContactForm = () => {
               value={formData.fullName}
               onChange={handleChange}
               required
-              className="w-full px-3 py-2 border bg-wall border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border bg-wall border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-darkBlue"
               placeholder={t('fullNamePlaceholder')}
+              disabled={status === 'sending'}
             />
           </motion.div>
 
@@ -101,8 +114,9 @@ const ContactForm = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-3 py-2 bg-wall border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 bg-wall border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-darkBlue"
               placeholder={t('emailPlaceholder')}
+              disabled={status === 'sending'}
             />
           </motion.div>
 
@@ -117,19 +131,40 @@ const ContactForm = () => {
               onChange={handleChange}
               required
               rows={4}
-              className="w-full px-3 py-2 bg-wall border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 bg-wall border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-darkBlue"
               placeholder={t('commentsPlaceholder')}
+              disabled={status === 'sending'}
             />
           </motion.div>
 
           <motion.button
             type="submit"
-            className="w-full bg-darkBlue text-white py-3 rounded-md hover: transition-colors"
+            className="w-full bg-darkBlue text-white py-3 rounded-md hover:bg-opacity-90 transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            disabled={status === 'sending'}
           >
-            {t('submitButton')}
+            {status === 'sending' ? t('sending') : t('submitButton')}
           </motion.button>
+
+          {status === 'success' && (
+            <motion.p 
+              className="text-green-800 text-center"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+            >
+              {t('successMessage')}
+            </motion.p>
+          )}
+          {status === 'error' && (
+            <motion.p 
+              className="text-red-500 text-center"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+            >
+              {t('errorMessage')}
+            </motion.p>
+          )}
         </motion.form>
       </div>
     </motion.section>

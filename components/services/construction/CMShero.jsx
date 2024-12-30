@@ -25,7 +25,7 @@ const CMShero = ({ title, subtitle, children }) => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-4xl  md:text-6xl font-bold text-gray-900 leading-tight"
+            className="text-4xl  md:text-6xl font-bold text-gray-900 leading-loose"
           >
             {children}{" "}
           </motion.h1>

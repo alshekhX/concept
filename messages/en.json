@@ -189,7 +189,12 @@
       "emailPlaceholder": "Enter your email address",
       "commentsLabel": "Project Details",
       "commentsPlaceholder": "Share your project details with us",
-      "submitButton": "Send Message"
+      "submitButton": "Send Message",
+      
+        "sending": "Sending...",
+        "successMessage": "Message sent successfully!",
+        "errorMessage": "Failed to send message. Please try again."
+      
     },
     "Map": {
       "title": "Visit Our Location",
@@ -269,25 +274,40 @@
     "Applications": {
       "title": "Applications",
       "sections": {
-        "aluminumFormwork": {
-          "title": "ALUMINUM FORMWORK SYSTEM",
-          "description": "Aluminum formwork systems represent a revolutionary approach to concrete construction, ensuring high efficiency, precision, and reduced construction timelines. This method employs durable and lightweight aluminum molds that are reusable and highly adaptable to complex architectural designs.",
-          "highlight": "Our company specializes in deploying this advanced technology for projects ranging from high-rise buildings to residential complexes, ensuring efficiency without compromising quality."
+        "excavationBackfilling": {
+          "title": "PRECISION EXCAVATION AND SITE PREPARATION SERVICES",
+          "description": "Our excavation and backfilling services employ advanced equipment and engineering techniques to prepare construction sites with exceptional accuracy. We handle everything from initial site clearing to final grade completion, ensuring optimal ground conditions for construction.",
+          "highlight": "Our skilled operators and engineers utilize GPS-guided equipment and advanced soil testing methods to deliver precise excavation depths and compaction rates, ensuring a stable foundation for your project."
         },
-        "precastConcrete": {
-          "title": "PRECAST CONCRETE WORKS",
-          "description": "Precast concrete is a modern construction technique involving the off-site casting, transportation, and assembly of concrete elements, providing high-quality, uniform, and efficient solutions for various applications including structural components (beams, columns, slabs), precast walls for buildings, and modular infrastructure projects.",
-          "highlight": "We integrate precast solutions into projects to optimize efficiency and minimize on-site disruption."
+        "concreteStructures": {
+          "title": "ADVANCED CONCRETE STRUCTURE SOLUTIONS",
+          "description": "We specialize in the design and construction of sophisticated concrete structures that combine durability with architectural excellence. Our approach incorporates modern concrete technologies and innovative forming techniques to create lasting structures.",
+          "highlight": "Our concrete specialists implement cutting-edge formwork systems and mix designs, ensuring optimal strength, durability, and aesthetic appeal for every structural element."
         },
-        "traditionalConcrete": {
-          "title": "TRADITIONAL CONCRETE WORKS",
-          "description": "Traditional concrete work is a fundamental method in construction, blending manual skills with modern techniques to build strong and affordable structures. It's versatile and suitable for projects of all sizes, including residential and commercial buildings, foundations, industrial columns, and structural frameworks.",
-          "highlight": "Our expertise in traditional concrete works guarantees high standards of safety and durability for all types of projects."
+        "interiorExteriorFinishing": {
+          "title": "PREMIUM CONSTRUCTION FINISHING SERVICES",
+          "description": "Our finishing services transform raw structures into polished, functional spaces through meticulous attention to detail and use of premium materials. We handle both interior and exterior finishing with equal expertise and artistic vision.",
+          "highlight": "Our finishing teams combine traditional craftsmanship with modern techniques to create spaces that perfectly balance aesthetics with functionality."
         },
-        "vinylFlooring": {
-          "title": "VINYL FLOORING WORKS",
-          "description": "Vinyl flooring is a versatile, durable, and affordable choice for residential, commercial, and industrial spaces. It's perfect for healthcare facilities, educational institutions, offices, retail spaces, and homes. Vinyl flooring comes in various designs, mimicking wood, stone, or tile finishes. It's highly resistant to moisture, stains, and scratches, and is easy to install and maintain.",
-          "highlight": "Our team ensures precise installation and premium quality materials for long lasting vinyl flooring solutions."
+        "infrastructureWorks": {
+          "title": "COMPREHENSIVE INFRASTRUCTURE DEVELOPMENT",
+          "description": "We provide complete infrastructure solutions including sanitary networks, water systems, and electrical installations. Our integrated approach ensures all systems work harmoniously while meeting current and future needs.",
+          "highlight": "Our infrastructure specialists coordinate complex system installations while maintaining strict compliance with local codes and international best practices."
+        },
+        "residentialProjects": {
+          "title": "CUSTOM RESIDENTIAL CONSTRUCTION",
+          "description": "From single-family homes to multi-unit developments, we create living spaces that combine comfort, efficiency, and elegance. Each project is tailored to meet specific client needs while maximizing property value.",
+          "highlight": "Our residential construction teams work closely with clients to transform architectural visions into comfortable, efficient living spaces that exceed expectations."
+        },
+        "commercialProjects": {
+          "title": "COMMERCIAL CONSTRUCTION EXCELLENCE",
+          "description": "We deliver sophisticated commercial spaces that enhance business operations and create lasting impressions. Our projects range from office buildings to retail centers, each designed to optimize functionality and appeal.",
+          "highlight": "Our commercial construction experts focus on creating environments that boost productivity while maintaining aesthetic excellence and energy efficiency."
+        },
+        "industrialProjects": {
+          "title": "INDUSTRIAL FACILITY CONSTRUCTION",
+          "description": "Our industrial construction services deliver robust facilities engineered for optimal operational efficiency. We specialize in creating spaces that meet specific industrial requirements while ensuring safety and sustainability.",
+          "highlight": "Our industrial construction specialists integrate advanced building technologies with practical operational requirements to create facilities that enhance productivity and maintain safety standards."
         }
       }
     }
