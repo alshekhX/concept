@@ -72,21 +72,21 @@
         },
         {
           "title": "Madinag Housing (Ard Alnaql)",
-          "description": "We are a limited liability company based in Tabuk, Saudi Arabia. Founded on over 20 years of cumulative experience through our institutions, we specialize in government projects and have gained extensive expertise in the Saudi market.",
+          "description": "A major residential development project consisting of 10 five-story buildings with comprehensive HVAC infrastructure including the installation of 8,800 units.",
           "details": [
             {
               "category": "Concrete and Construction",
               "description": "10 buildings, each with 5 floors"
             },
             {
-              "category": "HVAC Works",
+              "category": "HVAC Works", 
               "description": "Installation of 8,800 units"
             }
           ]
         },
         {
           "title": "Establishing the Barq Al Mustaqbal Headquarters",
-          "description": "We are a limited liability company based in Tabuk, Saudi Arabia. Founded on over 20 years of cumulative experience through our institutions, we specialize in government projects and have gained extensive expertise in the Saudi market",
+          "description": "A comprehensive construction project involving concrete construction and full foundation setup, complemented by complete HVAC installations, wooden door fittings, and marble supply and installation work.",
           "details": "Concrete construction and full foundation setup, including HVAC installations, wooden doors, and marble supplies."
         }
       ]
