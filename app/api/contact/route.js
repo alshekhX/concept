@@ -10,11 +10,17 @@ export async function POST(request) {
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: process.env.SMTP_PORT,
-      secure: true,
+      secure: false,
       auth: {
         user: process.env.SMTP_EMAIL,
         pass: process.env.SMTP_PASSWORD
       }
+        ,
+        tls: {
+          rejectUnauthorized: false,
+          minVersion: 'TLSv1.2'
+
+        }
     });
 
     const mailOptions = {
